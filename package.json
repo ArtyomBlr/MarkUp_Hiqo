@@ -16,5 +16,11 @@
   "bugs": {
     "url": "https://github.com/ArtyomBlr/MarkUp_Hiqo/issues"
   },
-  "homepage": "https://github.com/ArtyomBlr/MarkUp_Hiqo#readme"
+  "homepage": "https://github.com/ArtyomBlr/MarkUp_Hiqo#readme",
+  "devDependencies": {
+    "csscomb": "^4.3.0",
+    "htmlhint": "^0.14.1",
+    "stylelint": "^13.6.1",
+    "stylelint-config-standard": "^20.0.0"
+  }
 }

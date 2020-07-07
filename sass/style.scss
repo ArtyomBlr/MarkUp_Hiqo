@@ -1,13 +1,10 @@
 // Abstract
 @import "abstracts/constants";
 @import "abstracts/mixins";
-
 // Base
 @import "base/reset";
-
 // Components
 @import "components/buttons";
-
 // Layouts
 @import "layouts/header";
 @import "layouts/wrapper";
@@ -18,4 +15,3 @@
 @import "layouts/marketers";
 @import "layouts/slider";
 @import "layouts/footer";
-
