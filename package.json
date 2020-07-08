@@ -1,7 +1,6 @@
 {
   "name": "markup_hiqo",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "build": "gulp build",
@@ -12,7 +11,7 @@
   },
   "husky": {
     "hooks": {
-        "pre-commit": "npm run test"
+      "pre-commit": "npm run test"
     }
   },
   "repository": {
@@ -46,5 +45,7 @@
     "stylelint": "^13.6.1",
     "stylelint-config-htmlacademy": "^0.1.4",
     "stylelint-config-standard": "^20.0.0"
-  }
+  },
+  "dependencies": {},
+  "description": ""
 }
