@@ -1,1 +1,9 @@
+.bottom-navigation {
+  @include font (16px, normal, normal, 35px);
+  margin-left: -40px;
+  list-style-type: none;
+}
 
+.bottom-link {
+  text-decoration: none;
+}

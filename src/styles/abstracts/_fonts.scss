@@ -7,9 +7,9 @@
 
 @font-face {
   font-family: "Poppins";
-  src: url("./fonts/Poppins-Bold.otf") format("otf");
+  src: url("./fonts/Poppins-Medium.otf") format("otf");
   font-style: normal;
-  font-weight: bold;
+  font-weight: 500;
 }
 
 @font-face {
@@ -17,6 +17,20 @@
   src: url("./fonts/Poppins-SemiBold.otf") format("otf");
   font-style: normal;
   font-weight: 600;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("./fonts/Poppins-Bold.otf") format("otf");
+  font-style: normal;
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("./fonts/Poppins-Black.otf") format("otf");
+  font-style: normal;
+  font-weight: 800;
 }
 
 @font-face {

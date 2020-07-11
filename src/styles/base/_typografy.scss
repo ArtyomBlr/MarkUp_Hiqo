@@ -36,7 +36,14 @@ h6 {
 
 p,
 li,
-a {
+a,
+button {
   font-family: "Poppins", sans-serif;
   color: $color-text;
+}
+
+input {
+  @include font (16px, 900, normal, 28px);
+  font-family: "Avenir", sans-serif;
+  color: $color-border;
 }

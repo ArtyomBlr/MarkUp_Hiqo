@@ -1,1 +1,31 @@
+.login-button {
+  @include font (16px, 600, normal, 24px);
+  width: 102px;
+  height: 46px;
+  background: 0;
+  border: 1px solid $color-border;
+  border-radius: 4px;
+  text-align: center;
+  color: $color-logo;
+}
 
+.registration-button {
+  @include font (16px, 600, normal, 24px);
+  width: 111px;
+  height: 46px;
+  background: $color-brand;
+  border: 0;
+  border-radius: 4px;
+  text-align: center;
+  color: $color-standard;
+}
+
+.get-started-button {
+  width: 175px;
+  height: 53px;
+}
+
+.feedback-form-button {
+  width: 131px;
+  height: 39px;
+}

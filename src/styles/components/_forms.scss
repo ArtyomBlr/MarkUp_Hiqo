@@ -1,1 +1,14 @@
+.feedback-form-input {
+  width: 325px;
+  height: 48px;
+  background: $color-standard;
+  border: 1px solid $color-border;
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 0 15px;
+  color: $color-border;
+}
 
+.feedback-form-input::placeholder {
+  color: $color-border;
+}
