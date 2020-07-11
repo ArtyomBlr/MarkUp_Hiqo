@@ -5,18 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/style.min.css" />
     <title>Productly</title>
-    <script src="https://kit.fontawesome.com/50207fee34.js" crossorigin="anonymous"></script>
   </head>
   <body>
-    <header>
-      <div class="logo">
-        <a href="#"><img src="./images/logo.png" alt="logo" /><span class="logo-name">Productly</span></a>
-      </div>
+    <header class="wrapper">
       <nav class="navigation">
-        <a href="#" class="navigation-link link-active">Product</a>
-        <a href="#" class="navigation-link">Customers</a>
-        <a href="#" class="navigation-link">Pricng</a>
-        <a href="#" class="navigation-link">Resources</a>         
+        <div class="logo">
+          <a href="#" class="logo"><img src="./images/logo.png" alt="logo" /><span class="logo-name">Productly</span></a>
+        </div>
+        <ul class="site-navigation">
+          <li class="site-navigation-list"><a href="#" class="site-navigation-link">Product</a></li>
+          <li class="site-navigation-list"><a href="#" class="site-navigation-link">Customers</a></li>
+          <li class="site-navigation-list"><a href="#" class="site-navigation-link">Pricng</a></li>
+          <li class="site-navigation-list"><a href="#" class="site-navigation-link">Resources</a></li>
+        </ul>         
       </nav>
       <div class="sign-buttons">
         <button class="login-button">Sign In</button>
@@ -24,57 +25,49 @@
       </div>
     </header>
 
-    <main>
-      <article class="grid-two-blocks">
+    <main class="wrapper">
+      <section class="grid-two-blocks section-design-thinking">
         <div class="superpower">
           <h1>The Design Thinking superpowers</h1>
           <p class="superpower-text">Tools, tutorials, design and innovation experts, all in one place! The most intuitive way to imagine your next user experience.</p>
           <div class="get-started">
             <button class="registration-button">Get started</button>
-            <a href="#"><i class="fas fa-play"></i><span class="video">Watch the Video</span></a>
+            <a href="#" class="video">Watch the Video</a>
           </div>
         </div>
         <img src="./images/three_person.png" alt="three person" />
-      </article>
+      </section>
 
-      <article class="tools">
+      <section class="tools section-design-tools">
         <h2>We design tools to unveil your superpowers</h2>
         <div class="grid-four-columns tools-modify">
           <div class="tools-element">
-            <div class="icon-mouse">
-              <i class="fa fa-mouse-pointer" aria-hidden="true"></i>
-            </div>
+            <img src="./images/icon1.svg" alt="mouse" />
             <h4>First click tests</h4>
             <p>While most people enjoy casino gambling,</p>
           </div>
           <div class="tools-element">
-            <div class="icon-stumbleupon">
-              <i class="fa fa-stumbleupon" aria-hidden="true"></i>
-            </div>
+            <img src="./images/icon2.svg" alt="funny line" />
             <h4>Design surveys</h4>
             <p>Sports betting, lottery and bingo playing for the fun</p>
           </div>
           <div class="tools-element">
-            <div class="icon-heart">
-              <i class="fa fa-heart" aria-hidden="true"></i>
-            </div>
+            <img src="./images/icon3.svg" alt="heart" />
             <h4>Preference tests</h4>
             <p>The Myspace page defines the individual.</p>
           </div>
           <div class="tools-element">
-            <div class="icon-hourglass">
-              <i class="fa fa-hourglass-half" aria-hidden="true"></i>
-            </div>
+            <img src="./images/icon4.svg" alt="time" />
             <h4>Five second tests</h4>
             <p>Personal choices and the overall personality of the person.</p>
           </div>
         </div>
         <button class="registration-button">Sign Up Now</button>
-      </article>
+      </section>
 
-      <article class="stuff">
-        <section class="grid-two-columns">
-          <div class="professionals">
+      <div class="stuff">
+        <section class="grid-two-columns section-professionals">
+          <div class="stuff-information">
             <p class="simple-text">Effortless Validation for</p>
             <h2>Design Professionals</h2>
             <p class="simple-text">The Myspace page defines the individual, his or her characteristics, traits, personal choices and the overall personality of the person.</p>
@@ -88,31 +81,22 @@
           <img src="./images/professional.png" alt="design professional" />
         </section>
 
-        <section class="grid-two-blocks">
+        <section class="grid-two-blocks section-product-managers">
           <img src="./images/manager.png" alt="product managers" />
-          <div class="product-managers">
+          <div class="product-managers-information">
             <p class="simple-text">Easier decision making for</p>
             <h2>Product Managers</h2>
             <p class="simple-text">The Myspace page defines the individual, his or her characteristics, traits, personal choices and the overall personality of the person.</p>
-            <div class="managers-list">
-              <div class="managers-list-element">
-                <div class="icon-hourglass"><i class="fa fa-check" aria-hidden="true"></i></div>
-                <p class="simple-text">Never worry about overpaying for your energy again.</p>
-              </div>
-              <div class="managers-list-element">
-                <div class="icon-hourglass"><i class="fa fa-check" aria-hidden="true"></i></div>
-                <p class="simple-text">We will only switch you to energy companies that we trust and will treat you right</p>
-              </div>
-              <div class="managers-list-element">
-                <div class="icon-hourglass"><i class="fa fa-check" aria-hidden="true"></i></div>
-                <p class="simple-text">We track the markets daily and know where the savings are.</p>
-              </div>
-            </div>
+            <ul class="manager-list">
+              <li class="manager-list-item">Never worry about overpaying for your energy again.</li>
+              <li class="manager-list-item">We will only switch you to energy companies that we trust and will treat you right</li>
+              <li class="manager-list-item">We track the markets daily and know where the savings are.</li>
+            </ul>
           </div>
         </section>
 
-        <section class="grid-two-blocks">
-          <div class="marketers">
+        <section class="grid-two-blocks section-marketers">
+          <div class="stuff-information">
             <p class="simple-text">Optimisation for</p>
             <h2>Marketers</h2>
             <p class="simple-text">Few would argue that, despite the advancements of feminism over the past three decades, women still face a double standard when it comes to their behavior.</p>
@@ -125,9 +109,9 @@
           </div>
           <img src="./images/marketer.png" alt="marketer" />
         </section>
-      </article>
+      </div>
 
-      <article class="marketing-strategies">
+      <section class="section-marketing-strategies">
         <h3>Marketing Strategies</h3>
         <p>Join 40,000+ other marketers and get proven strategies on email marketing</p>
         <div class="carousel">
@@ -152,27 +136,31 @@
           <div class="toggle toggle-active"></div>
           <div class="toggle"></div>
         </div>
-      </article>
+      </section>
     </main>
 
-    <footer>
+    <footer class="wrapper">
       <div class="bottom">
         <div class="logo">
           <a href="#"><img src="./images/logo.png" alt="logo" /><span class="logo-name">Productly</span></a>
         </div>
         <div class="quick-links">
           <h5>Quick Links</h5>
-          <a href="#">About Us</a>
-          <a href="#">Blog</a>
-          <a href="#">Contact</a>
-          <a href="#">FAQ</a>
+          <ul class="bottom-navigation">
+            <li class="bottom-list"><a href="#" class="bottom-linsk">About Us</a></li>
+            <li class="bottom-list"><a href="#" class="bottom-linsk">Blog</a></li>
+            <li class="bottom-list"><a href="#" class="bottom-linsk">Contact</a></li>
+            <li class="bottom-list"><a href="#" class="bottom-linsk">FAQ</a></li>
+          </ul>
         </div>
         <div class="quick-links">
           <h5>Legal Stuff</h5>
-          <a href="#">Disclaimer</a>
-          <a href="#">Financing</a>
-          <a href="#">Privacy Policy</a>
-          <a href="#">Terms of Service</a>
+          <ul class="bottom-navigation">
+            <li class="bottom-list"><a href="#" class="bottom-linsk">Disclaimer</a></li>
+            <li class="bottom-list"><a href="#" class="bottom-linsk">Financing</a></li>
+            <li class="bottom-list"><a href="#" class="bottom-linsk">Privacy Policy</a></li>
+            <li class="bottom-list"><a href="#" class="bottom-linsk">Terms of Service</a></li>
+          </ul>
         </div>
         <div class="feedback-form">
           <h5>knowing you're always on the best energy deal.</h5>
@@ -180,7 +168,6 @@
             <input type="text">
             <button class="registration-button feedback-button">Sign Up Now</button>
           </form>
-
         </div>
       </div>      
     </footer>
