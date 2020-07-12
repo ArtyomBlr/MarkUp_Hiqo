@@ -1,4 +1,31 @@
-.wrapper {
-  max-width: 1400px;
-  margin: 0 144px;
+.wrapper-header {
+  @include wrapper (1400px, 0 144px 0 145px);
+}
+
+.wrapper-design-thinking {
+  @include wrapper (1400px, 0 129px 0 145px);
+}
+
+.wrapper-design-tools {
+  @include wrapper (1400px, 0 144px 0 161px);
+}
+
+.wrapper-professionals {
+  @include wrapper (1400px, 0 144px 0 145px);
+}
+
+.wrapper-product-managers {
+  @include wrapper (1400px, 0 135px 0 144px);
+}
+
+.wrapper-marketers {
+  @include wrapper (1400px, 0 143px 0 147px);
+}
+
+.wrapper-section-marketing-strategies {
+  @include wrapper (1400px, 0 146px);
+}
+
+.wrapper-footer {
+  @include wrapper (1400px, 0 145px);
 }

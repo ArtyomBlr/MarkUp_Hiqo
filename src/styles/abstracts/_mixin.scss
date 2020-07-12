@@ -5,7 +5,7 @@
   line-height: $height;
 }
 
-@mixin content-second-width {
+@mixin content-small-width {
   @media (max-width: $content-second-width) {
     @content;
   }
@@ -27,5 +27,17 @@
   @media (max-width: $mobile-small-width) {
     @content;
   }
+}
+
+@mixin wrapper ($max-width, $margin) {
+  max-width: $max-width;
+  margin: $margin;
+}
+
+@mixin button ($padding, $border, $color, $background) {
+  padding: $padding;
+  border: $border;
+  color: $color;
+  background: $background;
 }
 

@@ -1,31 +1,25 @@
-.login-button {
+.button {
   @include font (16px, 600, normal, 24px);
-  width: 102px;
-  height: 46px;
-  background: 0;
-  border: 1px solid $color-border;
   border-radius: 4px;
   text-align: center;
-  color: $color-logo;
 }
 
-.registration-button {
-  @include font (16px, 600, normal, 24px);
-  width: 111px;
-  height: 46px;
-  background: $color-brand;
-  border: 0;
-  border-radius: 4px;
-  text-align: center;
-  color: $color-standard;
+.sign-in-button {
+  @include button (11px 25px 11px 22px, 1px solid $color-border, $color-logo, 0);
+}
+
+.sign-up-button {
+  @include button (11px 25px 11px 23px, 0, $color-button-text, $color-brand);
+}
+
+.sign-up-now-button {
+  @include button (15px 41px 14px, 0, $color-button-text, $color-brand);
 }
 
 .get-started-button {
-  width: 175px;
-  height: 53px;
+  @include button (15px 34px 14px 32px, 0, $color-button-text, $color-brand);
 }
 
 .feedback-form-button {
-  width: 131px;
-  height: 39px;
+  @include button (8px 15px 7px, 0, $color-button-text, $color-brand);
 }

@@ -1,0 +1,99 @@
+/****** Elad Shechter's RESET *******/
+/*** box sizing border-box for all elements ***/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+button {
+  background-color: transparent;
+  color: inherit;
+  border-width: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+figure {
+  margin: 0;
+}
+
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+dd {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+h1 {
+  margin: 0;
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+h2 {
+  margin: 0;
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+h3 {
+  margin: 0;
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+h4 {
+  margin: 0;
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+h5 {
+  margin: 0;
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+h6 {
+  margin: 0;
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+p {
+  margin: 0;
+}
+
+cite {
+  font-style: normal;
+}
+
+fieldset {
+  border-width: 0;
+  padding: 0;
+  margin: 0;
+}

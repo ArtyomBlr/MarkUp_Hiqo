@@ -1,1 +1,23 @@
+.manager-list {
+  @include font (16px, 500, normal, 26px);
+  max-width: 450px;
 
+  &-item {
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 0 0 30px 65px;
+
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      left: 0;
+      width: 35px;
+      height: 35px;
+      border-radius: 14px;
+      background: url("../images/check.svg") no-repeat center center;
+      background-color: $color-brand;
+    }
+  }
+}
