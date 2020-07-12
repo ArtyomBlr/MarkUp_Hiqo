@@ -7,11 +7,11 @@
     "start": "gulp start",
     "htmlhint": "htmlhint src/**/*.html",
     "stylelint": "stylelint src/**/*.scss",
-    "test": "npm run stylelint & npm run htmlhint"
+    "lint": "npm run stylelint & npm run htmlhint"
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm run test"
+      "pre-commit": "npm run lint"
     }
   },
   "repository": {
