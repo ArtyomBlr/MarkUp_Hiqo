@@ -14,7 +14,6 @@
 @import "components/wrapper";
 @import "components/logo";
 @import "components/buttons";
-@import "components/icons";
 @import "components/list";
 @import "components/forms";
 @import "components/carousel";
@@ -23,5 +22,7 @@
 // Layouts
 
 @import "layouts/header";
+@import "layouts/trade-offer";
+@import "layouts/benefits";
 @import "layouts/grid";
 @import "layouts/footer";

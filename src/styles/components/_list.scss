@@ -21,3 +21,15 @@
     }
   }
 }
+
+.navigation-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 350px;
+
+  &-item-link {
+    @include font (14px, normal, normal, 28px);
+    color: $color-links;
+  }
+}

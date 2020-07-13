@@ -34,10 +34,3 @@
   margin: $margin;
 }
 
-@mixin button ($padding, $border, $color, $background) {
-  padding: $padding;
-  border: $border;
-  color: $color;
-  background: $background;
-}
-

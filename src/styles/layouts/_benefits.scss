@@ -1,0 +1,34 @@
+.section-benefits {
+  padding: 0 0 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: url("../images/Bg.svg") no-repeat center bottom;
+
+  & .h2 {
+    margin-bottom: 54px;
+    max-width: 540px;
+    text-align: center;
+  }
+
+  & .benefits-button {
+    padding: 15px 34px 14px 32px;
+  }
+}
+
+.benefits {
+  margin-bottom: 34px;
+
+  &-element-image {
+    margin-bottom: 30px;
+  }
+
+  & .h4 {
+    margin-bottom: 13px;
+  }
+
+  &-element-text {
+    @include font (16px, 500, normal, 26px);
+  }
+}
+

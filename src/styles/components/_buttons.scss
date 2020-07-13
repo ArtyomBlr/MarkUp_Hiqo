@@ -4,22 +4,17 @@
   text-align: center;
 }
 
-.sign-in-button {
-  @include button (11px 25px 11px 22px, 1px solid $color-border, $color-logo, 0);
+.button-filled {
+  border: 0;
+  color: $color-button-text;
+  background: $color-brand;
 }
 
-.sign-up-button {
-  @include button (11px 25px 11px 23px, 0, $color-button-text, $color-brand);
+.button-ghost {
+  border: 1px solid $color-border;
+  color: $color-logo;
 }
 
-.sign-up-now-button {
-  @include button (15px 41px 14px, 0, $color-button-text, $color-brand);
-}
-
-.get-started-button {
-  @include button (15px 34px 14px 32px, 0, $color-button-text, $color-brand);
-}
-
-.feedback-form-button {
-  @include button (8px 15px 7px, 0, $color-button-text, $color-brand);
-}
+// .feedback-form-button {
+//   @include button (8px 15px 7px, 0, $color-button-text, $color-brand);
+// }

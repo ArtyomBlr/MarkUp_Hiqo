@@ -1,1 +1,15 @@
+.grid-two-columns {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
 
+.grid-four-columns {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  &-item {
+    width: 25%;
+  }
+}

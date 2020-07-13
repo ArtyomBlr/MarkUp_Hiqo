@@ -1,1 +1,30 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 35px;
+
+  & .navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 75%;
+  }
+
+  &-buttons {
+    display: flex;
+    justify-content: space-between;
+
+    &-ghost {
+      margin-right: 14px;
+      padding: 11px 25px 11px 22px;
+    }
+
+    &-filled {
+      padding: 11px 25px 11px 23px;
+    }
+  }
+}
 
