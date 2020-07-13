@@ -1,3 +1,35 @@
+// .wrapper-header {
+//   @include wrapper (1400px, 0 auto);
+// }
+
+// .wrapper-trade-offer {
+//   @include wrapper (1400px, auto);
+// }
+
+// .wrapper-benefits {
+//   @include wrapper (1400px, auto);
+// }
+
+// .wrapper-professionals {
+//   @include wrapper (1400px, auto);
+// }
+
+// .wrapper-product-managers {
+//   @include wrapper (1400px, auto);
+// }
+
+// .wrapper-marketers {
+//   @include wrapper (1400px, auto);
+// }
+
+// .wrapper-section-carousel {
+//   @include wrapper (1400px, auto);
+// }
+
+// .wrapper-footer {
+//   @include wrapper (1400px, auto);
+// }
+
 .wrapper-header {
   @include wrapper (1400px, 0 144px 0 145px);
 }
@@ -26,6 +58,6 @@
   @include wrapper (1400px, 0 146px);
 }
 
-.wrapper-footer {
+.wrapper-bottom {
   @include wrapper (1400px, 0 145px);
 }

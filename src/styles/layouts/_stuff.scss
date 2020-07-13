@@ -1,0 +1,33 @@
+.section-professionals {
+  padding: 120px 0 0;
+}
+
+.section-product-managers {
+  padding: 101px 0 0;
+}
+
+.section-marketers {
+  padding: 105px 0 0;
+}
+
+.stuff-information {
+  max-width: 486px;
+
+  & .h2 {
+    margin-bottom: 22px;
+
+    &-simple-text {
+      @include font (16px, 500, normal, 26px);
+      display: block;
+    }
+  }
+
+  & .simple-text {
+    @include font (16px, 500, normal, 26px);
+  }
+
+  & .h6 {
+    margin: 30px 0 12px;
+  }
+}
+

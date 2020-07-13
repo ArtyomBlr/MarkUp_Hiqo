@@ -1,5 +1,6 @@
 .manager-list {
   @include font (16px, 500, normal, 26px);
+  margin-top: 30px;
   max-width: 450px;
 
   &-item {
