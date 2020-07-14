@@ -31,33 +31,33 @@
 // }
 
 .wrapper-header {
-  @include wrapper (1400px, 0 144px 0 145px);
+  @include wrapper (1400px, 0 auto, 0 145px 0 144px);
 }
 
 .wrapper-trade-offer {
-  @include wrapper (1400px, 0 129px 0 145px);
+  @include wrapper (1400px, 0 auto, 47px 129px 0 145px);
 }
 
 .wrapper-benefits {
-  @include wrapper (1400px, 0 144px 0 161px);
+  @include wrapper (1400px, 0 auto , 111px 144px 90px 161px);
 }
 
 .wrapper-professionals {
-  @include wrapper (1400px, 0 144px 0 145px);
+  @include wrapper (1400px, 0 auto, 116px 144px 0 145px);
 }
 
 .wrapper-product-managers {
-  @include wrapper (1400px, 0 135px 0 144px);
+  @include wrapper (1400px, 0 auto, 95px 135px 0 144px);
 }
 
 .wrapper-marketers {
-  @include wrapper (1400px, 0 143px 0 147px);
+  @include wrapper (1400px, 0 auto, 105px 143px 0 147px);
 }
 
 .wrapper-section-carousel {
-  @include wrapper (1400px, 0 146px);
+  @include wrapper (1400px, 0 auto, 120px 146px 120px 147px);
 }
 
 .wrapper-bottom {
-  @include wrapper (1400px, 0 145px);
+  @include wrapper (1110px, 0 auto, 100px 0 101px);
 }

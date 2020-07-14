@@ -2,36 +2,42 @@
   @include font (44px, bold, normal, 54px);
   font-family: "Poppins", sans-serif;
   color: $color-title;
+  letter-spacing: 1px;
 }
 
 .h2 {
   @include font (36px, bold, normal, 54px);
   font-family: "Poppins", sans-serif;
   color: $color-title;
+  letter-spacing: 1px;
 }
 
 .h3 {
   @include font (34px, bold, normal, 51px);
   font-family: "Poppins", sans-serif;
   color: $color-title;
+  letter-spacing: 1px;
 }
 
 .h4 {
   @include font (22px, 600, normal, 33px);
   font-family: "Poppins", sans-serif;
   color: $color-title;
+  letter-spacing: 1px;
 }
 
 .h5 {
   @include font (20px, 900, normal, 30px);
   font-family: "Avenir", sans-serif;
   color: $color-title;
+  letter-spacing: 1px;
 }
 
 .h6 {
   @include font (16px, bold, normal, 26px);
   font-family: "Poppins", sans-serif;
   color: $color-title;
+  letter-spacing: 1px;
 }
 
 p,

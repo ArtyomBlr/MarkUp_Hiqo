@@ -1,20 +1,7 @@
-.section-professionals {
-  padding: 120px 0 0;
-}
-
-.section-product-managers {
-  padding: 101px 0 0;
-}
-
-.section-marketers {
-  padding: 105px 0 0;
-}
-
-.stuff-information {
-  max-width: 486px;
-
+.stuff-information-odd,
+.stuff-information-even {
   & .h2 {
-    margin-bottom: 22px;
+    margin-bottom: 27px;
 
     &-simple-text {
       @include font (16px, 500, normal, 26px);
@@ -24,10 +11,25 @@
 
   & .simple-text {
     @include font (16px, 500, normal, 26px);
+    margin-bottom: 25px;
+
+    &-higher {
+      margin-bottom: 30px;
+    }
   }
 
   & .h6 {
-    margin: 30px 0 12px;
+    margin-bottom: 12px;
   }
+}
+
+.stuff-information-odd {
+  max-width: 475px;
+  margin-top: 27px;
+}
+
+.stuff-information-even {
+  max-width: 486px;
+  margin-top: 30px;
 }
 

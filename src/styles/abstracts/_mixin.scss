@@ -29,8 +29,9 @@
   }
 }
 
-@mixin wrapper ($max-width, $margin) {
+@mixin wrapper ($max-width, $margin, $padding) {
   max-width: $max-width;
   margin: $margin;
+  padding: $padding;
 }
 
