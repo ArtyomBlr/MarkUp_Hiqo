@@ -20,14 +20,22 @@
         @include font (16px, 600, normal, 24px);
         display: flex;
         position: relative;
+        padding-left: 27px;
         text-decoration-line: underline;
         color: $color-brand;
 
         &::before {
           content: "";
+          position: absolute;
+          left: 0;
           width: 20px;
           height: 20px;
           background: url("../images/arrow.svg") no-repeat center center;
+        }
+
+        &:hover {
+          @include animation (none, ease 0.2s);
+          color: $color-button-filled-hover;
         }
       }
     }

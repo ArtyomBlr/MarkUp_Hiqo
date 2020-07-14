@@ -35,3 +35,8 @@
   padding: $padding;
 }
 
+@mixin animation ($transform, $transition) {
+  transform: $transform;
+  transition: $transition;
+}
+

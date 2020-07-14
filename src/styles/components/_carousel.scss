@@ -19,8 +19,14 @@
       }
 
       &-link {
+        @include animation (none, ease 0.2s);
         @include font (24px, bold, normal, 34px);
         letter-spacing: 2px;
+
+        &:hover {
+          @include animation (none, ease 0.2s);
+          color: $color-brand;
+        }
       }
     }
   }
@@ -37,6 +43,11 @@
       height: 16px;
       border-radius: 50%;
       background: $color-pager;
+      cursor: pointer;
+
+      &:hover {
+        border: 1px solid $color-text;
+      }
 
       &-active {
         background: $color-brand;

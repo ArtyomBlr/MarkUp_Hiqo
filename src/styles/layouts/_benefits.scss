@@ -18,16 +18,24 @@
 .benefits {
   margin-bottom: 60px;
 
-  &-element-image {
-    margin-bottom: 26px;
-  }
+  &-element {
+    @include animation (scale(1, 1), ease 0.2s);
 
-  & .h4 {
-    margin-bottom: 13px;
-  }
+    &:hover {
+      @include animation (scale(1.2, 1.2), ease 0.2s);
+    }
 
-  &-element-text {
-    @include font (16px, 500, normal, 26px);
+    &-image {
+      margin-bottom: 26px;
+    }
+
+    & .h4 {
+      margin-bottom: 13px;
+    }
+
+    &-text {
+      @include font (16px, 500, normal, 26px);
+    }
   }
 }
 
