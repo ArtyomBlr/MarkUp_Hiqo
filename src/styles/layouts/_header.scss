@@ -12,6 +12,10 @@
     align-items: center;
     width: 75%;
 
+    @include content-width-l {
+      width: 67%;
+    }
+
     & .logo {
       @include animation (scale(1, 1), ease-in-out 0.5s);
 

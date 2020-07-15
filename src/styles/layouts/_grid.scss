@@ -3,14 +3,23 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+
+  @include content-width-m {
+    align-items: end;
+  }
 }
 
 .grid-four-columns {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  flex-wrap: wrap;
 
   &-item {
     width: 22%;
+
+    @include content-width-s {
+      width: 50%;
+    }
   }
 }

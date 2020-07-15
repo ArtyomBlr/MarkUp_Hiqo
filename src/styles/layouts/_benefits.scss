@@ -8,6 +8,10 @@
     margin-bottom: 51px;
     max-width: 540px;
     text-align: center;
+
+    @include content-width-s {
+      margin-bottom: 20px;
+    }
   }
 
   & .benefits-button {
@@ -21,20 +25,50 @@
   &-element {
     @include animation (scale(1, 1), ease 0.2s);
 
+    @include content-width-s {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      margin-top: 30px;
+    }
+
     &:hover {
       @include animation (scale(1.2, 1.2), ease 0.2s);
     }
 
     &-image {
       margin-bottom: 26px;
+
+      @include content-width-s {
+        margin-right: 15px;
+        margin-bottom: 0;
+      }
     }
+
+    // &-information {
+    //   @include content-width-s {
+    //     display: flex;
+    //   }
+    // }
 
     & .h4 {
       margin-bottom: 13px;
+
+      @include content-width-m {
+        @include font (18px, 600, normal, 33px);
+      }
+
+      @include content-width-s {
+        margin-bottom: 0;
+      }
     }
 
     &-text {
       @include font (16px, 500, normal, 26px);
+
+      @include content-width-m {
+        @include font (14px, 500, normal, 26px);
+      }
     }
   }
 }

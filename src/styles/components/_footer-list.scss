@@ -2,6 +2,10 @@
   @include font (16px, normal, normal, 35px);
   list-style-type: none;
 
+  @include content-width-m {
+    @include font (14px, normal, normal, 35px);
+  }
+
   &-item-link {
     &:hover {
       color: $color-brand;

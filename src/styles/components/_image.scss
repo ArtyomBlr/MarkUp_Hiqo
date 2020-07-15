@@ -1,10 +1,30 @@
 .trade-offer-image {
   width: 55%;
+
+  @include content-width-l {
+    width: 40%;
+  }
+
+  @include content-width-m {
+    width: 30%;
+  }
 }
 
 .professional-image,
 .product-manager-image,
 .marketer-image {
   width: 48%;
+
+  @include content-width-l {
+    width: 40%;
+  }
+
+  @include content-width-m {
+    width: 40%;
+  }
+
+  @include content-width-s {
+    display: none;
+  }
 }
 

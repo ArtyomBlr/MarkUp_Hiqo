@@ -3,25 +3,70 @@
     margin-bottom: 11px;
   }
 
+  & .carousel-swiper {
+    @include content-width-s {
+      display: flex;
+      align-items: center;
+    }
+  }
+
   & .carousel {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    max-width: 100%;
     margin-top: 55px;
+
+    @include content-width-s {
+      flex-wrap: wrap;
+      margin-top: 0;
+    }
 
     &-slider {
       max-width: 348px;
 
+      @include content-width-l {
+        margin-right: 20px;
+      }
+
+      @include content-width-m {
+        max-width: 320px;
+      }
+
+      @include content-width-s {
+        max-width: 70%;
+        margin: 30px 0;
+      }
+
+      &-image {
+        width: 100%;
+      }
+
       &-figcaption {
         @include font (16px, normal, normal, 28px);
         margin: 20px 0 11px;
+
+        @include content-width-m {
+          @include font (14px, normal, normal, 25px);
+        }
       }
 
       &-link {
         @include animation (none, ease 0.2s);
         @include font (24px, bold, normal, 34px);
         letter-spacing: 2px;
+
+        @include content-width-l {
+          @include font (20px, bold, normal, 34px);
+        }
+
+        @include content-width-m {
+          @include font (18px, bold, normal, 25px);
+          letter-spacing: 2px;
+        }
+
+        @include content-width-s {
+          letter-spacing: 4px;
+        }
 
         &:hover {
           @include animation (none, ease 0.2s);
@@ -37,6 +82,12 @@
     justify-content: center;
     margin-top: 54px;
 
+    @include content-width-s {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
     &-item {
       margin: 0 5px;
       width: 16px;
@@ -44,6 +95,12 @@
       border-radius: 50%;
       background: $color-pager;
       cursor: pointer;
+
+      @include content-width-s {
+        margin: 10px 0;
+        width: 22px;
+        height: 22px;
+      }
 
       &:hover {
         border: 1px solid $color-text;

@@ -1,21 +1,46 @@
 .bottom {
+  flex-wrap: wrap-reverse;
   border-top: 1px solid $color-border-opacity;
 
   & .logo-footer {
     margin-right: 7%;
+    order: 1;
+
+    @include content-width-l {
+      margin-right: 0;
+    }
   }
 
   & .quick-links {
     width: 17%;
-    margin-left: 30px;
+    margin-bottom: 30px;
+    order: 2;
+
+    @include content-width-m {
+      width: 46%;
+      margin-top: 20px;
+      order: 3;
+    }
 
     & .h5 {
       margin-bottom: 37px;
+    }
+
+    & .bottom-navigation-list {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
     }
   }
 
   & .feedback-form {
     max-width: 326px;
+    order: 2;
+
+    @include content-width-m {
+      max-width: 46%;
+      order: 2;
+    }
 
     & .form-button {
       padding: 8px 17px 7px;

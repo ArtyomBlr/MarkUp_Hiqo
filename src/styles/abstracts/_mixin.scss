@@ -5,8 +5,20 @@
   line-height: $height;
 }
 
-@mixin content-small-width {
-  @media (max-width: $content-second-width) {
+@mixin content-width-l {
+  @media (max-width: $content-width-l) {
+    @content;
+  }
+}
+
+@mixin content-width-m {
+  @media (max-width: $content-width-m) {
+    @content;
+  }
+}
+
+@mixin content-width-s {
+  @media (max-width: $content-width-s) {
     @content;
   }
 }

@@ -1,63 +1,83 @@
-// .wrapper-header {
-//   @include wrapper (1400px, 0 auto);
-// }
-
-// .wrapper-trade-offer {
-//   @include wrapper (1400px, auto);
-// }
-
-// .wrapper-benefits {
-//   @include wrapper (1400px, auto);
-// }
-
-// .wrapper-professionals {
-//   @include wrapper (1400px, auto);
-// }
-
-// .wrapper-product-managers {
-//   @include wrapper (1400px, auto);
-// }
-
-// .wrapper-marketers {
-//   @include wrapper (1400px, auto);
-// }
-
-// .wrapper-section-carousel {
-//   @include wrapper (1400px, auto);
-// }
-
-// .wrapper-footer {
-//   @include wrapper (1400px, auto);
-// }
-
 .wrapper-header {
   @include wrapper (1400px, 0 auto, 0 145px 0 144px);
+
+  @include content-width-l {
+    @include wrapper (1400px, 0 auto, 0 80px);
+  }
 }
 
 .wrapper-trade-offer {
   @include wrapper (1400px, 0 auto, 47px 129px 0 145px);
+
+  @include content-width-l {
+    @include wrapper (1400px, 0 auto, 60px 80px 0);
+  }
 }
 
 .wrapper-benefits {
   @include wrapper (1400px, 0 auto , 111px 144px 90px 161px);
+
+  @include content-width-l {
+    @include wrapper (1400px, 0 auto, 80px 80px);
+  }
 }
 
 .wrapper-professionals {
   @include wrapper (1400px, 0 auto, 116px 144px 0 145px);
+
+  @include content-width-l {
+    @include wrapper (1400px, 0 auto, 80px 80px 0);
+  }
+
+  @include content-width-s {
+    @include wrapper (1400px, 0 auto, 40px 80px 20px);
+  }
 }
 
 .wrapper-product-managers {
   @include wrapper (1400px, 0 auto, 95px 135px 0 144px);
+
+  @include content-width-l {
+    @include wrapper (1400px, 0 auto, 70px 80px 0);
+  }
+
+  @include content-width-s {
+    @include wrapper (1400px, 0 auto, 20px 80px 20px);
+  }
 }
 
 .wrapper-marketers {
   @include wrapper (1400px, 0 auto, 105px 143px 0 147px);
+
+  @include content-width-l {
+    @include wrapper (1400px, 0 auto, 90px 80px 0);
+  }
+
+  @include content-width-s {
+    @include wrapper (1400px, 0 auto, 20px 80px 20px);
+  }
 }
 
 .wrapper-section-carousel {
   @include wrapper (1400px, 0 auto, 120px 146px 120px 147px);
+
+  @include content-width-l {
+    @include wrapper (1400px, 0 auto, 90px 80px);
+  }
+
+  @include content-width-m {
+    @include wrapper (1400px, 0 auto, 60px 80px);
+  }
 }
 
 .wrapper-bottom {
   @include wrapper (1110px, 0 auto, 100px 0 101px);
+
+  @include content-width-l {
+    @include wrapper (1400px, 0 auto, 90px 80px);
+  }
+
+  @include content-width-m {
+    @include wrapper (1400px, 0 auto, 60px 80px);
+  }
 }

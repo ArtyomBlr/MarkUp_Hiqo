@@ -2,9 +2,18 @@
   & .trade-offer {
     margin-right: 67px;
 
+    @include content-width-s {
+      margin-right: 15px;
+    }
+
     &-text {
       @include font (18px, normal, normal, 28px);
       margin: 30px 0 53px;
+
+      @include content-width-s {
+        @include font (15px, normal, normal, 28px);
+        margin: 25px 0 35px;
+      }
     }
 
     &-button {
@@ -14,15 +23,21 @@
       &-filled {
         margin-right: 31px;
         padding: 15px 45px 14px;
+
+        @include content-width-s {
+          padding: 10px 30px 10px;
+        }
       }
 
       & .link-to-video {
         @include font (16px, 600, normal, 24px);
         display: flex;
+        text-align: center;
         position: relative;
         padding-left: 27px;
         text-decoration-line: underline;
         color: $color-brand;
+        align-items: center;
 
         &::before {
           content: "";

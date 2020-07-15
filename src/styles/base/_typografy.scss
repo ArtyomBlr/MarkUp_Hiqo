@@ -3,6 +3,14 @@
   font-family: "Poppins", sans-serif;
   color: $color-title;
   letter-spacing: 1px;
+
+  @include content-width-m {
+    @include font (40px, bold, normal, 54px);
+  }
+
+  @include content-width-s {
+    @include font (38px, bold, normal, 50px);
+  }
 }
 
 .h2 {
@@ -10,6 +18,14 @@
   font-family: "Poppins", sans-serif;
   color: $color-title;
   letter-spacing: 1px;
+
+  @include content-width-m {
+    @include font (34px, bold, normal, 54px);
+  }
+
+  @include content-width-s {
+    @include font (32px, bold, normal, 46px);
+  }
 }
 
 .h3 {
@@ -17,6 +33,14 @@
   font-family: "Poppins", sans-serif;
   color: $color-title;
   letter-spacing: 1px;
+
+  @include content-width-m {
+    @include font (32px, bold, normal, 51px);
+  }
+
+  @include content-width-s {
+    @include font (30px, bold, normal, 46px);
+  }
 }
 
 .h4 {
@@ -24,6 +48,14 @@
   font-family: "Poppins", sans-serif;
   color: $color-title;
   letter-spacing: 1px;
+
+  @include content-width-m {
+    @include font (20px, 600, normal, 33px);
+  }
+
+  @include content-width-s {
+    @include font (18px, 600, normal, 33px);
+  }
 }
 
 .h5 {
@@ -31,6 +63,14 @@
   font-family: "Avenir", sans-serif;
   color: $color-title;
   letter-spacing: 1px;
+
+  @include content-width-m {
+    @include font (18px, 900, normal, 30px);
+  }
+
+  @include content-width-s {
+    @include font (16px, 900, normal, 30px);
+  }
 }
 
 .h6 {
@@ -38,6 +78,10 @@
   font-family: "Poppins", sans-serif;
   color: $color-title;
   letter-spacing: 1px;
+
+  @include content-width-s {
+    @include font (14px, bold, normal, 26px);
+  }
 }
 
 p,
@@ -48,10 +92,18 @@ figure,
 span {
   font-family: "Poppins", sans-serif;
   color: $color-text;
+
+  @include content-width-s {
+    @include font (14px, bold, normal, 26px);
+  }
 }
 
 input {
   @include font (16px, 900, normal, 28px);
   font-family: "Avenir", sans-serif;
   color: $color-border;
+
+  @include content-width-s {
+    @include font (14px, bold, normal, 26px);
+  }
 }

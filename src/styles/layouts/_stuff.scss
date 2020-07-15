@@ -1,7 +1,18 @@
+.section-product-managers {
+  @include content-width-s {
+    border-top: 1px solid $color-border-opacity;
+    border-bottom: 1px solid $color-border-opacity;
+  }
+}
+
 .stuff-information-odd,
 .stuff-information-even {
   & .h2 {
     margin-bottom: 27px;
+
+    @include content-width-m {
+      margin-bottom: 15px;
+    }
 
     &-simple-text {
       @include font (16px, 500, normal, 26px);
@@ -13,23 +24,53 @@
     @include font (16px, 500, normal, 26px);
     margin-bottom: 25px;
 
+    @include content-width-m {
+      margin-bottom: 10px;
+    }
+
     &-higher {
       margin-bottom: 30px;
+
+      @include content-width-m {
+        margin-bottom: 14px;
+      }
     }
   }
 
   & .h6 {
     margin-bottom: 12px;
+
+    @include content-width-m {
+      margin-bottom: 10px;
+    }
   }
 }
 
 .stuff-information-odd {
   max-width: 475px;
   margin-top: 27px;
+
+  @include content-width-m {
+    max-width: 440px;
+    margin-top: 10px;
+  }
+
+  @include content-width-s {
+    max-width: 100%;
+  }
 }
 
 .stuff-information-even {
   max-width: 486px;
   margin-top: 30px;
+
+  @include content-width-m {
+    max-width: 440px;
+    margin-top: 10px;
+  }
+
+  @include content-width-s {
+    max-width: 100%;
+  }
 }
 

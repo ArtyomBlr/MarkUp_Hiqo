@@ -3,11 +3,23 @@
   margin-top: 55px;
   max-width: 435px;
 
+  @include content-width-m {
+    margin-top: 30px;
+  }
+
+  @include content-width-s {
+    max-width: 100%;
+  }
+
   &-item {
     display: flex;
     align-items: center;
     position: relative;
     padding: 0 0 30px 65px;
+
+    @include content-width-m {
+      padding: 0 0 18px 65px;
+    }
 
     &::before {
       content: "";
@@ -28,6 +40,10 @@
   flex-direction: row;
   justify-content: space-between;
   width: 327px;
+
+  @include content-width-m {
+    width: 305px;
+  }
 
   &-item-link {
     @include font (14px, normal, normal, 28px);
