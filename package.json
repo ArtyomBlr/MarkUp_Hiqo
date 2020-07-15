@@ -1,18 +1,17 @@
 {
   "name": "markup_hiqo",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "build": "gulp build",
     "start": "gulp start",
     "htmlhint": "htmlhint src/**/*.html",
     "stylelint": "stylelint src/**/*.scss",
-    "test": "npm run stylelint & npm run htmlhint"
+    "lint": "npm run stylelint & npm run htmlhint"
   },
   "husky": {
     "hooks": {
-        "pre-commit": "npm run test"
+      "pre-commit": "npm run lint"
     }
   },
   "repository": {
@@ -46,6 +45,8 @@
     "stylelint": "^13.6.1",
     "stylelint-config-htmlacademy": "^0.1.4",
     "stylelint-config-standard": "^20.0.0"
-  }
+  },
+  "dependencies": {},
+  "description": ""
 }
 
