@@ -1,0 +1,44 @@
+.navigation-menu-burger {
+  @include tablet-width {
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 20px;
+
+    & span {
+      position: absolute;
+      background: $color-title;
+      left: 0;
+      width: 100%;
+      height: 3px;
+      top: 9px;
+    }
+
+    &::before,
+    &::after {
+      content: "";
+      background: $color-title;
+      position: absolute;
+      width: 100%;
+      height: 3px;
+    }
+
+    &::before {
+      top: 0;
+    }
+
+    &::after {
+      bottom: 0;
+    }
+
+    &:hover + .navigation-list {
+      display: block;
+      width: 100%;
+      position: absolute;
+      left: 0;
+      top: 90px;
+      background: red;
+    }
+  }
+}
+

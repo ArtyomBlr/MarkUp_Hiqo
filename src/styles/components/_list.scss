@@ -53,6 +53,10 @@
     width: 305px;
   }
 
+  @include content-width-s {
+    width: 355px;
+  }
+
   @include tablet-width {
     display: none;
   }
