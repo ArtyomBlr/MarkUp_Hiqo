@@ -11,6 +11,14 @@
   @include content-width-s {
     @include font (38px, bold, normal, 50px);
   }
+
+  @include tablet-width {
+    @include font (30px, bold, normal, 50px);
+  }
+
+  @include mobile-width {
+    @include font (22px, bold, normal, 35px);
+  }
 }
 
 .h2 {
@@ -25,6 +33,14 @@
 
   @include content-width-s {
     @include font (32px, bold, normal, 46px);
+  }
+
+  @include tablet-width {
+    @include font (26px, bold, normal, 44px);
+  }
+
+  @include mobile-width {
+    @include font (20px, bold, normal, 35px);
   }
 }
 
@@ -41,6 +57,14 @@
   @include content-width-s {
     @include font (30px, bold, normal, 46px);
   }
+
+  @include tablet-width {
+    @include font (24px, bold, normal, 44px);
+  }
+
+  @include mobile-width {
+    @include font (22px, bold, normal, 30px);
+  }
 }
 
 .h4 {
@@ -56,6 +80,14 @@
   @include content-width-s {
     @include font (18px, 600, normal, 33px);
   }
+
+  @include tablet-width {
+    @include font (16px, 600, normal, 33px);
+  }
+
+  @include mobile-width {
+    @include font (14px, 600, normal, 30px);
+  }
 }
 
 .h5 {
@@ -70,6 +102,10 @@
 
   @include content-width-s {
     @include font (16px, 900, normal, 30px);
+  }
+
+  @include tablet-width {
+    @include font (14px, 900, normal, 30px);
   }
 }
 
@@ -94,7 +130,11 @@ span {
   color: $color-text;
 
   @include content-width-s {
-    @include font (14px, bold, normal, 26px);
+    @include font (14px, normal, normal, 26px);
+  }
+
+  @include tablet-width {
+    @include font (14px, normal, normal, 26px);
   }
 }
 
@@ -104,6 +144,10 @@ input {
   color: $color-border;
 
   @include content-width-s {
+    @include font (14px, bold, normal, 26px);
+  }
+
+  @include tablet-width {
     @include font (14px, bold, normal, 26px);
   }
 }

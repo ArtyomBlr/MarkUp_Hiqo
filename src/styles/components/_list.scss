@@ -11,6 +11,10 @@
     max-width: 100%;
   }
 
+  @include mobile-width {
+    margin-top: 10px;
+  }
+
   &-item {
     display: flex;
     align-items: center;
@@ -19,6 +23,10 @@
 
     @include content-width-m {
       padding: 0 0 18px 65px;
+    }
+
+    @include mobile-width {
+      padding: 0 0 12px 50px;
     }
 
     &::before {
@@ -43,6 +51,10 @@
 
   @include content-width-m {
     width: 305px;
+  }
+
+  @include tablet-width {
+    display: none;
   }
 
   &-item-link {

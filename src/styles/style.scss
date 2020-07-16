@@ -12,6 +12,7 @@
 // Components
 
 @import "components/wrapper";
+@import "components/burger-menu";
 @import "components/buttons";
 @import "components/list";
 @import "components/forms";
@@ -21,9 +22,9 @@
 
 // Layouts
 
+@import "layouts/grid";
 @import "layouts/header";
 @import "layouts/trade-offer";
 @import "layouts/benefits";
 @import "layouts/stuff";
-@import "layouts/grid";
 @import "layouts/footer";

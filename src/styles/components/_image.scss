@@ -8,6 +8,15 @@
   @include content-width-m {
     width: 30%;
   }
+
+  @include tablet-width {
+    display: none;
+  }
+
+  @include tablet-width-half {
+    display: block;
+    width: 75%;
+  }
 }
 
 .professional-image,

@@ -2,6 +2,13 @@
   flex-wrap: wrap-reverse;
   border-top: 1px solid $color-border-opacity;
 
+  @include content-width-s {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
   & .logo-footer {
     margin-right: 7%;
     order: 1;
@@ -9,11 +16,15 @@
     @include content-width-l {
       margin-right: 0;
     }
+
+    @include content-width-s {
+      width: 100%;
+    }
   }
 
   & .quick-links {
     width: 17%;
-    margin-bottom: 30px;
+    margin-bottom: 25px;
     order: 2;
 
     @include content-width-m {
@@ -22,14 +33,34 @@
       order: 3;
     }
 
+    @include content-width-m {
+      width: 46%;
+      margin-top: 20px;
+      order: 3;
+    }
+
+    @include content-width-s {
+      width: 50%;
+    }
+
     & .h5 {
       margin-bottom: 37px;
+
+      @include content-width-m {
+        margin-bottom: 20px;
+      }
     }
 
     & .bottom-navigation-list {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
+      @include content-width-m {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+
+      @include content-width-s {
+        flex-direction: column;
+      }
     }
   }
 
@@ -37,13 +68,28 @@
     max-width: 326px;
     order: 2;
 
+    & .h5 {
+      @include content-width-s {
+        display: none;
+      }
+    }
+
     @include content-width-m {
       max-width: 46%;
-      order: 2;
+    }
+
+    @include content-width-s {
+      margin-top: 30px;
+      max-width: 100%;
+      width: 100%;
     }
 
     & .form-button {
       padding: 8px 17px 7px;
+
+      @include content-width-s {
+        padding: 5px 12px;
+      }
     }
   }
 }

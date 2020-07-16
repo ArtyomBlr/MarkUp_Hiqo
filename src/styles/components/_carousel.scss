@@ -21,6 +21,11 @@
       margin-top: 0;
     }
 
+    @include tablet-width {
+      display: block;
+      width: 100%;
+    }
+
     &-slider {
       max-width: 348px;
 
@@ -37,6 +42,10 @@
         margin: 30px 0;
       }
 
+      @include tablet-width {
+        max-width: 100%;
+      }
+
       &-image {
         width: 100%;
       }
@@ -47,6 +56,10 @@
 
         @include content-width-m {
           @include font (14px, normal, normal, 25px);
+        }
+
+        @include mobile-width {
+          margin: 11px 0;
         }
       }
 
@@ -65,7 +78,16 @@
         }
 
         @include content-width-s {
-          letter-spacing: 4px;
+          letter-spacing: 5px;
+        }
+
+        @include tablet-width {
+          letter-spacing: 3px;
+        }
+
+        @include mobile-width {
+          @include font (16px, bold, normal, 20px);
+          letter-spacing: 2px;
         }
 
         &:hover {
@@ -86,6 +108,10 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
+    }
+
+    @include tablet-width {
+      display: none;
     }
 
     &-item {

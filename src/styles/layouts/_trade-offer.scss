@@ -1,9 +1,23 @@
 .section-trade-offer {
+  @include tablet-width-half {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
   & .trade-offer {
     margin-right: 67px;
 
     @include content-width-s {
       margin-right: 15px;
+    }
+
+    @include tablet-width-half {
+      margin: 0 0 30px;
+    }
+
+    @include mobile-width {
+      margin: 0 0 20px;
     }
 
     &-text {
@@ -13,6 +27,11 @@
       @include content-width-s {
         @include font (15px, normal, normal, 28px);
         margin: 25px 0 35px;
+      }
+
+      @include mobile-width {
+        @include font (15px, normal, normal, 28px);
+        margin: 16px 0 22px;
       }
     }
 
@@ -26,6 +45,11 @@
 
         @include content-width-s {
           padding: 10px 30px 10px;
+        }
+
+        @include mobile-width {
+          width: 50%;
+          padding: 10px;
         }
       }
 
@@ -51,6 +75,10 @@
         &:hover {
           @include animation (none, ease 0.2s);
           color: $color-button-filled-hover;
+        }
+
+        @include mobile-width {
+          font-size: 14px;
         }
       }
     }

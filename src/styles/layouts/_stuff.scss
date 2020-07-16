@@ -28,6 +28,11 @@
       margin-bottom: 10px;
     }
 
+    @include mobile-width {
+      @include font (14px, 500, normal, 22px);
+      margin-bottom: 6px;
+    }
+
     &-higher {
       margin-bottom: 30px;
 

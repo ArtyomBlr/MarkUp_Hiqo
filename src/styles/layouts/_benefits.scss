@@ -4,6 +4,10 @@
   align-items: center;
   background: url("../images/Bg.svg") no-repeat center bottom;
 
+  @include tablet-width {
+    align-items: flex-start;
+  }
+
   & .h2 {
     margin-bottom: 51px;
     max-width: 540px;
@@ -12,15 +16,38 @@
     @include content-width-s {
       margin-bottom: 20px;
     }
+
+    @include tablet-width {
+      margin-bottom: 0;
+      width: 100%;
+      text-align: left;
+    }
   }
 
   & .benefits-button {
     padding: 15px 34px 14px 31px;
+
+    @include tablet-width {
+      // width: 100%;
+      padding: 10px 30px;
+    }
+
+    @include tablet-width-half {
+      width: 100%;
+    }
   }
 }
 
 .benefits {
   margin-bottom: 60px;
+
+  @include tablet-width {
+    margin-bottom: 45px;
+  }
+
+  @include mobile-width {
+    margin-bottom: 25px;
+  }
 
   &-element {
     @include animation (scale(1, 1), ease 0.2s);
@@ -30,6 +57,10 @@
       flex-direction: row;
       align-items: flex-start;
       margin-top: 30px;
+    }
+
+    @include mobile-width {
+      margin-top: 24px;
     }
 
     &:hover {
@@ -45,12 +76,6 @@
       }
     }
 
-    // &-information {
-    //   @include content-width-s {
-    //     display: flex;
-    //   }
-    // }
-
     & .h4 {
       margin-bottom: 13px;
 
@@ -60,6 +85,10 @@
 
       @include content-width-s {
         margin-bottom: 0;
+      }
+
+      @include mobile-width {
+        @include font (16px, 600, normal, 33px);
       }
     }
 
