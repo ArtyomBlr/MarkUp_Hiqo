@@ -44,6 +44,7 @@
 }
 
 .navigation-list {
+  @include animation (none, ease 0.3s);
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -58,6 +59,7 @@
   }
 
   @include tablet-width {
+    @include animation (none, ease 0.3s);
     display: none;
   }
 

@@ -6,7 +6,11 @@
   }
 
   &-burger {
-    @include animation (none, ease-in-out 0.2s);
+    @include animation (scale(1, 1.2), ease 0.3s);
+
+    &:hover {
+      @include animation (scale(1.4, 0.8), ease 0.3s);
+    }
 
     @include tablet-width {
       display: block;
@@ -44,12 +48,10 @@
 
   &-toggle-menu {
     .toggle-menu {
-      @include animation (none, ease-in-out 0.2s);
       display: none;
 
       &:checked ~ ul {
         @include tablet-width {
-          @include animation (none, ease-in-out 0.2s);
           display: flex;
           justify-content: space-between;
           flex-direction: column;
