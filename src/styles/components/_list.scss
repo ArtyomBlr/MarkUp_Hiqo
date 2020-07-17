@@ -61,16 +61,35 @@
     display: none;
   }
 
-  &-item-link {
-    @include font (14px, normal, normal, 28px);
-    @include animation (none, ease-in-out 0.2s);
-    color: $color-links;
-
-    &:hover {
+  &-item {
+    @include tablet-width {
       @include animation (none, ease-in-out 0.2s);
-      color: $color-brand;
-      border-bottom: 2px solid $color-brand;
-      padding-bottom: 5px;
+      border: 1px solid $color-brand;
+      border-radius: 4px;
+      margin: 0 40px;
+      padding: 16px;
+      background: $color-button-ghost-hover;
+
+      &:hover {
+        @include animation (none, ease-in-out 0.2s);
+        background: $color-button-filled-hover;
+      }
+    }
+
+    @include mobile-width {
+      margin: 0 20px;
+    }
+
+    &-link {
+      @include font (14px, normal, normal, 28px);
+      @include animation (none, ease-in-out 0.2s);
+      color: $color-links;
+
+      &:hover {
+        @include animation (none, ease-in-out 0.2s);
+        color: $color-brand;
+        padding-bottom: 5px;
+      }
     }
   }
 }
