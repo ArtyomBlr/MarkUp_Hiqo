@@ -8,7 +8,7 @@
     align-items: flex-start;
   }
 
-  & .h2 {
+  .h2 {
     margin-bottom: 51px;
     max-width: 540px;
     text-align: center;
@@ -24,7 +24,7 @@
     }
   }
 
-  & .benefits-button {
+  .benefits-button {
     padding: 15px 34px 14px 31px;
 
     @include tablet-width {
@@ -63,7 +63,11 @@
     }
 
     &:hover {
-      @include animation (scale(1.2, 1.2), ease 0.2s);
+      @include animation (scale(1.1, 1.1), ease 0.2s);
+
+      @include mobile-width {
+        @include animation (none, ease 0.2s);
+      }
     }
 
     &-image {
@@ -75,7 +79,7 @@
       }
     }
 
-    & .h4 {
+    .h4 {
       margin-bottom: 13px;
 
       @include content-width-m {

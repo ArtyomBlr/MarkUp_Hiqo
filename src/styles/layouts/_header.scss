@@ -13,7 +13,7 @@
     margin-top: 20px;
   }
 
-  & .navigation {
+  .navigation {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -33,14 +33,14 @@
     @include tablet-width {
       flex-direction: row;
       align-items: center;
-      width: 52%;
+      width: 50%;
     }
 
     @include tablet-width-half {
       width: 100%;
     }
 
-    & .logo {
+    .logo {
       @include animation (scale(1, 1), ease-in-out 0.5s);
 
       &:hover {

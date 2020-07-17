@@ -94,7 +94,6 @@
   @include font (20px, 900, normal, 30px);
   font-family: "Avenir", sans-serif;
   color: $color-title;
-  letter-spacing: 1px;
 
   @include content-width-m {
     @include font (18px, 900, normal, 30px);

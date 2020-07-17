@@ -1,5 +1,5 @@
 .feedback-form {
-  & .h5 {
+  .h5 {
     @include content-width-m {
       margin-bottom: 30px;
     }
@@ -15,7 +15,7 @@
     }
 
     &-input {
-      width: 60%;
+      width: 100%;
       padding: 10px 15px;
       margin: 31px 0 20px;
       box-sizing: border-box;

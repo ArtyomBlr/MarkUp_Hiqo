@@ -5,7 +5,7 @@
     align-items: center;
   }
 
-  & .trade-offer {
+  .trade-offer {
     margin-right: 67px;
 
     @include content-width-s {
@@ -53,7 +53,7 @@
         }
       }
 
-      & .link-to-video {
+      .link-to-video {
         @include font (16px, 600, normal, 24px);
         display: flex;
         text-align: center;

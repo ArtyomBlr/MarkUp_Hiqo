@@ -1,23 +1,23 @@
 .section-carousel {
-  & .h3 {
+  .h3 {
     margin-bottom: 11px;
   }
 
-  & .carousel-swiper {
+  .carousel-swiper {
     @include content-width-s {
       display: flex;
       align-items: center;
     }
   }
 
-  & .carousel {
+  .carousel {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     margin-top: 55px;
 
     @include content-width-s {
-      flex-wrap: wrap;
+      display: block;
       margin-top: 0;
     }
 
@@ -38,7 +38,7 @@
       }
 
       @include content-width-s {
-        max-width: 70%;
+        max-width: 100%;
         margin: 30px 0;
       }
 
@@ -74,20 +74,10 @@
 
         @include content-width-m {
           @include font (18px, bold, normal, 25px);
-          letter-spacing: 2px;
-        }
-
-        @include content-width-s {
-          letter-spacing: 5px;
-        }
-
-        @include tablet-width {
-          letter-spacing: 3px;
         }
 
         @include mobile-width {
           @include font (16px, bold, normal, 20px);
-          letter-spacing: 2px;
         }
 
         &:hover {
@@ -98,7 +88,7 @@
     }
   }
 
-  & .pager {
+  .pager {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -108,6 +98,7 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
+      margin-left: 140px;
     }
 
     @include tablet-width {

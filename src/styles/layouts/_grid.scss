@@ -1,17 +1,19 @@
 .grid-two-columns {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   align-items: center;
 
   @include content-width-m {
     align-items: end;
   }
+
+  @include mobile-width {
+    flex-direction: column;
+  }
 }
 
 .grid-four-columns {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   flex-wrap: wrap;
 

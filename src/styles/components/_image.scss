@@ -19,21 +19,37 @@
   }
 }
 
+.professional-image {
+  max-width: 520px;
+}
+
+.product-manager-image {
+  max-width: 532px;
+}
+
+.marketer-image {
+  max-width: 542px;
+}
+
 .professional-image,
 .product-manager-image,
 .marketer-image {
-  width: 48%;
-
   @include content-width-l {
     width: 40%;
   }
 
   @include content-width-m {
-    width: 40%;
+    width: 30%;
   }
 
   @include content-width-s {
     display: none;
+  }
+
+  @include mobile-width {
+    display: block;
+    margin-top: 30px;
+    width: 80%;
   }
 }
 
