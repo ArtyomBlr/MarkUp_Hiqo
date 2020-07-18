@@ -1,1 +1,112 @@
+.manager-list {
+  @include font (16px, 500, normal, 26px);
+  margin-top: 55px;
+  max-width: 435px;
 
+  @include content-width-m {
+    margin-top: 30px;
+  }
+
+  @include content-width-s {
+    max-width: 100%;
+  }
+
+  @include mobile-width {
+    margin-top: 10px;
+  }
+
+  &-item {
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 0 0 30px 65px;
+
+    @include content-width-m {
+      padding: 0 0 18px 65px;
+    }
+
+    @include mobile-width {
+      padding: 0 0 12px 50px;
+    }
+
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      left: 0;
+      width: 35px;
+      height: 35px;
+      border-radius: 14px;
+      background: url("../images/check.svg") no-repeat center center;
+      background-color: $color-brand;
+    }
+  }
+}
+
+.navigation-list {
+  @include animation (none, ease 0.3s);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 327px;
+
+  @include content-width-m {
+    width: 305px;
+  }
+
+  @include content-width-s {
+    width: 355px;
+  }
+
+  @include tablet-width {
+    @include animation (none, ease 0.3s);
+    display: none;
+  }
+
+  &-item {
+    @include tablet-width {
+      @include animation (none, ease-in-out 0.2s);
+      border-bottom: 3px solid $color-brand;
+      border-radius: 4px;
+      margin: 0 40px;
+      padding: 16px;
+      background: $color-button-ghost-hover;
+
+      &:hover {
+        @include animation (none, ease-in-out 0.2s);
+        background: $color-button-filled-hover;
+      }
+    }
+
+    @include mobile-width {
+      margin: 0 20px;
+    }
+
+    &-link {
+      @include font (14px, normal, normal, 28px);
+      @include animation (none, ease-in-out 0.2s);
+      color: $color-links;
+
+      &:hover {
+        @include animation (none, ease-in-out 0.2s);
+        color: $color-brand;
+        padding-bottom: 5px;
+      }
+    }
+  }
+}
+
+.bottom-navigation-list {
+  @include font (16px, normal, normal, 35px);
+  list-style-type: none;
+
+  @include content-width-m {
+    @include font (14px, normal, normal, 35px);
+  }
+
+  &-item-link {
+    &:hover {
+      color: $color-brand;
+    }
+  }
+}

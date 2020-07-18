@@ -1,0 +1,94 @@
+.navigation-menu {
+  display: none;
+
+  @include tablet-width {
+    display: block;
+  }
+
+  &-burger {
+    @include tablet-width {
+      display: block;
+      position: relative;
+      width: 30px;
+      height: 20px;
+
+      &-line {
+        @include animation (none, ease 0.3s);
+        position: absolute;
+        background: $color-title;
+        left: 0;
+        width: 100%;
+        height: 3px;
+        top: 5px;
+
+        &::before,
+        &::after {
+          @include animation (none, ease 0.3s);
+          content: "";
+          background: $color-title;
+          position: absolute;
+          width: 100%;
+          height: 3px;
+        }
+
+        &::before {
+          top: 8px;
+        }
+
+        &::after {
+          bottom: 8px;
+        }
+      }
+    }
+  }
+
+  &-toggle-menu {
+    .toggle-menu {
+      display: none;
+
+      &:checked ~ .navigation-list {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        position: absolute;
+        left: 0;
+        margin-top: 30px;
+        width: 100%;
+        z-index: 3;
+      }
+
+      &:checked ~ .navigation-menu-burger > span {
+        @include animation (rotate(45deg), ease 0.3s);
+      }
+
+      &:checked ~ .navigation-menu-burger > span::before {
+        @include animation (rotate(0deg), ease 0.3s);
+        top: 0;
+      }
+
+      &:checked ~ .navigation-menu-burger > span::after {
+        @include animation (rotate(90deg), ease 0.3s);
+        bottom: 1px;
+      }
+
+      .navigation-list {
+        @include animation (none, ease 0.5s);
+        opacity: 1;
+      }
+    }
+  }
+}
+
+.navigation-list-item {
+  @include animation (scale(1, 1), ease 0.3s);
+
+  &:hover {
+    @include animation (scale(0.99, 0.95), ease 0.3s);
+  }
+
+  &-link {
+    &:hover {
+      color: $color-links;
+    }
+  }
+}

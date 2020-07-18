@@ -1,1 +1,43 @@
+.feedback-form {
+  .h5 {
+    @include content-width-m {
+      margin-bottom: 30px;
+    }
+  }
+
+  &-bottom {
+    @include content-width-m {
+      display: flex;
+    }
+
+    @include content-width-s {
+      flex-direction: column;
+    }
+
+    &-input {
+      width: 100%;
+      padding: 10px 15px;
+      margin: 31px 0 20px;
+      box-sizing: border-box;
+      border: 1px solid $color-border;
+      border-radius: 4px;
+      background: $color-button-text;
+      color: $color-border;
+
+      &::placeholder {
+        color: $color-border;
+      }
+
+      @include content-width-m {
+        margin: 0 10px 0 0;
+        padding: 8px 12px;
+      }
+
+      @include content-width-s {
+        width: 100%;
+        margin-bottom: 25px;
+      }
+    }
+  }
+}
 

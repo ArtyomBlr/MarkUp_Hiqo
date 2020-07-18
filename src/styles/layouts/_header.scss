@@ -1,1 +1,92 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 35px;
+
+  @include tablet-width-half {
+    flex-wrap: wrap;
+  }
+
+  @include mobile-width {
+    margin-top: 20px;
+  }
+
+  .navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 75%;
+
+    @include content-width-l {
+      width: 67%;
+    }
+
+    @include content-width-s {
+      flex-direction: column;
+      align-items: flex-start;
+      width: 60%;
+    }
+
+    @include tablet-width {
+      flex-direction: row;
+      align-items: center;
+      width: 50%;
+    }
+
+    @include tablet-width-half {
+      width: 100%;
+    }
+
+    .logo {
+      @include animation (scale(1, 1), ease-in-out 0.5s);
+      margin-right: 30px;
+
+      &:hover {
+        @include animation (scale(1.2, 1.2), ease-in-out 0.5s);
+      }
+    }
+
+    &-menu-burger {
+      display: block;
+    }
+  }
+
+  &-buttons {
+    display: flex;
+    justify-content: space-between;
+
+    @include tablet-width-half {
+      margin-top: 20px;
+      width: 100%;
+    }
+
+    &-ghost {
+      margin-right: 14px;
+      padding: 11px 25px 11px 22px;
+
+      @include tablet-width {
+        padding: 8px 15px;
+      }
+
+      @include tablet-width-half {
+        width: 50%;
+      }
+    }
+
+    &-filled {
+      padding: 11px 25px 11px 23px;
+
+      @include tablet-width {
+        padding: 8px 15px;
+      }
+
+      @include tablet-width-half {
+        width: 50%;
+      }
+    }
+  }
+}
 

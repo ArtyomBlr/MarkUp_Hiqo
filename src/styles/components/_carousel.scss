@@ -1,1 +1,132 @@
+.section-carousel {
+  .h3 {
+    margin-bottom: 11px;
+  }
+
+  .carousel-swiper {
+    @include content-width-s {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  .carousel {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 55px;
+
+    @include content-width-s {
+      display: block;
+      margin-top: 0;
+    }
+
+    @include tablet-width {
+      display: block;
+      width: 100%;
+    }
+
+    &-slider {
+      max-width: 348px;
+
+      @include content-width-l {
+        margin-right: 20px;
+      }
+
+      @include content-width-m {
+        max-width: 320px;
+      }
+
+      @include content-width-s {
+        max-width: 100%;
+        margin: 30px 0;
+      }
+
+      @include tablet-width {
+        max-width: 100%;
+      }
+
+      &-image {
+        width: 100%;
+      }
+
+      &-figcaption {
+        @include font (16px, normal, normal, 28px);
+        margin: 20px 0 11px;
+
+        @include content-width-m {
+          @include font (14px, normal, normal, 25px);
+        }
+
+        @include mobile-width {
+          margin: 11px 0;
+        }
+      }
+
+      &-link {
+        @include animation (none, ease 0.2s);
+        @include font (24px, bold, normal, 34px);
+        letter-spacing: 2px;
+
+        @include content-width-l {
+          @include font (20px, bold, normal, 34px);
+        }
+
+        @include content-width-m {
+          @include font (18px, bold, normal, 25px);
+        }
+
+        @include mobile-width {
+          @include font (16px, bold, normal, 20px);
+        }
+
+        &:hover {
+          @include animation (none, ease 0.2s);
+          color: $color-brand;
+        }
+      }
+    }
+  }
+
+  .pager {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 54px;
+
+    @include content-width-s {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin-left: 140px;
+    }
+
+    @include tablet-width {
+      display: none;
+    }
+
+    &-item {
+      margin: 0 5px;
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      background: $color-pager;
+      cursor: pointer;
+
+      @include content-width-s {
+        margin: 10px 0;
+        width: 22px;
+        height: 22px;
+      }
+
+      &:hover {
+        border: 1px solid $color-text;
+      }
+
+      &-active {
+        background: $color-brand;
+      }
+    }
+  }
+}
 
