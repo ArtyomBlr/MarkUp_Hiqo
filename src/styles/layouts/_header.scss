@@ -42,6 +42,7 @@
 
     .logo {
       @include animation (scale(1, 1), ease-in-out 0.5s);
+      margin-right: 30px;
 
       &:hover {
         @include animation (scale(1.2, 1.2), ease-in-out 0.5s);

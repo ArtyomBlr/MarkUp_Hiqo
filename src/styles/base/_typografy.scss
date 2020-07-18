@@ -137,7 +137,7 @@ span {
   }
 }
 
-input {
+.input {
   @include font (16px, 900, normal, 28px);
   font-family: "Avenir", sans-serif;
   color: $color-border;
