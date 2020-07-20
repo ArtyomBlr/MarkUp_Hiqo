@@ -21,7 +21,6 @@
     }
 
     &-text {
-      @include font (18px, normal, normal, 28px);
       margin: 30px 0 53px;
 
       @include content-width-s {
@@ -53,7 +52,7 @@
         }
       }
 
-      .link-to-video {
+      .video-link {
         @include font (16px, 600, normal, 24px);
         display: flex;
         text-align: center;

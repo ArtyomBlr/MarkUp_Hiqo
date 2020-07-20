@@ -1,4 +1,4 @@
-.h1 {
+.header-title {
   @include font (44px, bold, normal, 54px);
   font-family: "Poppins", sans-serif;
   color: $color-title;
@@ -21,7 +21,7 @@
   }
 }
 
-.h2 {
+.section-title {
   @include font (36px, bold, normal, 54px);
   font-family: "Poppins", sans-serif;
   color: $color-title;
@@ -44,7 +44,7 @@
   }
 }
 
-.h3 {
+.section-title-small {
   @include font (34px, bold, normal, 51px);
   font-family: "Poppins", sans-serif;
   color: $color-title;
@@ -67,7 +67,7 @@
   }
 }
 
-.h4 {
+.content-title {
   @include font (22px, 600, normal, 33px);
   font-family: "Poppins", sans-serif;
   color: $color-title;
@@ -90,7 +90,7 @@
   }
 }
 
-.h5 {
+.content-title-middle {
   @include font (20px, 900, normal, 30px);
   font-family: "Avenir", sans-serif;
   color: $color-title;
@@ -108,7 +108,7 @@
   }
 }
 
-.h6 {
+.content-title-small {
   @include font (16px, bold, normal, 26px);
   font-family: "Poppins", sans-serif;
   color: $color-title;
@@ -149,4 +149,12 @@ span {
   @include tablet-width {
     @include font (14px, bold, normal, 26px);
   }
+}
+
+.trade-offer-text {
+  @include font (18px, normal, normal, 28px);
+}
+
+.simple-text {
+  @include font (16px, 500, normal, 26px);
 }

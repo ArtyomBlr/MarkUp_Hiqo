@@ -8,7 +8,7 @@
     align-items: flex-start;
   }
 
-  .h2 {
+  .section-title {
     margin-bottom: 51px;
     max-width: 540px;
     text-align: center;
@@ -79,7 +79,7 @@
       }
     }
 
-    .h4 {
+    .content-title {
       margin-bottom: 13px;
 
       @include content-width-m {
@@ -96,8 +96,6 @@
     }
 
     &-text {
-      @include font (16px, 500, normal, 26px);
-
       @include content-width-m {
         @include font (14px, 500, normal, 26px);
       }
