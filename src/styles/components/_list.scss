@@ -47,15 +47,11 @@
   @include animation (none, ease 0.3s);
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  width: 327px;
-
-  @include content-width-m {
-    width: 305px;
-  }
+  justify-content: flex-end;
+  width: 70%;
 
   @include content-width-s {
-    width: 355px;
+    justify-content: flex-start;
   }
 
   @include tablet-width {
@@ -64,6 +60,10 @@
   }
 
   &-item {
+    &:not(:last-child) {
+      margin-right: 27px;
+    }
+
     @include tablet-width {
       @include animation (none, ease-in-out 0.2s);
       border-bottom: 3px solid $color-brand;
@@ -71,6 +71,10 @@
       margin: 0 40px;
       padding: 16px;
       background: $color-button-ghost-hover;
+
+      &:not(:last-child) {
+        margin-right: 40px;
+      }
 
       &:hover {
         @include animation (none, ease-in-out 0.2s);
@@ -80,6 +84,10 @@
 
     @include mobile-width {
       margin: 0 20px;
+
+      &:not(:last-child) {
+        margin-right: 20px;
+      }
     }
 
     &-link {
@@ -90,7 +98,6 @@
       &:hover {
         @include animation (none, ease-in-out 0.2s);
         color: $color-brand;
-        padding-bottom: 5px;
       }
     }
   }
