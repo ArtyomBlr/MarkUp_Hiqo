@@ -7,7 +7,8 @@
     "start": "gulp start",
     "htmlhint": "htmlhint src/**/*.html",
     "stylelint": "stylelint src/**/*.scss",
-    "lint": "npm run stylelint & npm run htmlhint"
+    "eslint": "eslint ./src/scripts/*.js",
+    "lint": "npm run stylelint && npm run htmlhint && npm run eslint"
   },
   "husky": {
     "hooks": {
@@ -30,6 +31,13 @@
     "browser-sync": "^2.26.7",
     "csscomb": "^4.3.0",
     "del": "^5.1.0",
+    "eslint": "^7.2.0",
+    "eslint-config-airbnb": "^18.2.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-plugin-import": "^2.21.2",
+    "eslint-plugin-jsx-a11y": "^6.3.0",
+    "eslint-plugin-react": "^7.20.0",
+    "eslint-plugin-react-hooks": "^4.0.0",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^7.0.1",
     "gulp-babel": "^8.0.0-beta.2",

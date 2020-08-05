@@ -2,7 +2,7 @@
 
 // const SliderModule = (function() {
 //   function init() {
-    
+
 //   }
 
 //   function slideRight() {
