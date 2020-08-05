@@ -4,46 +4,59 @@
   }
 
   .carousel-swiper {
-    @include content-width-s {
+    overflow: hidden;
+
+    &-buttons {
       display: flex;
-      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+
+      &-prev {
+        width: 120px;
+        height: 120px;
+        padding: 20px;
+        margin-top: 10px;
+        text-align: center;
+
+        &:hover {
+          border: 1px solid $color-border;
+          border-radius: 50%;
+        }
+
+        &-button {
+          width: 30px;
+        }
+      }
+
+      &-next {
+        width: 120px;
+        height: 120px;
+        padding: 20px;
+        margin-top: 10px;
+        text-align: center;
+
+        &:hover {
+          border: 1px solid $color-border;
+          border-radius: 50%;
+        }
+
+        &-button {
+          width: 30px;
+        }
+      }
     }
   }
 
   .carousel {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
     margin-top: 55px;
 
-    @include content-width-s {
-      display: block;
-      margin-top: 0;
-    }
-
-    @include tablet-width {
-      display: block;
-      width: 100%;
-    }
-
     &-slider {
-      max-width: 348px;
-
-      @include content-width-l {
-        margin-right: 20px;
-      }
-
-      @include content-width-m {
-        max-width: 320px;
-      }
+      flex: 0 0 32%;
+      margin-right: 20px;
 
       @include content-width-s {
-        max-width: 100%;
-        margin: 30px 0;
-      }
-
-      @include tablet-width {
-        max-width: 100%;
+        flex: 0 0 100%;
       }
 
       &-image {
@@ -92,17 +105,14 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin-top: 54px;
-
-    @include content-width-s {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      margin-left: 140px;
-    }
+    margin-top: -60px;
 
     @include tablet-width {
-      display: none;
+      margin: 25px 0 20px;
+    }
+
+    @include mobile-width {
+      margin: 25px 0 0;
     }
 
     &-item {
@@ -113,10 +123,10 @@
       background: $color-pager;
       cursor: pointer;
 
-      @include content-width-s {
-        margin: 10px 0;
-        width: 22px;
-        height: 22px;
+      @include tablet-width {
+        margin: 0 8px;
+        width: 12px;
+        height: 12px;
       }
 
       &:hover {

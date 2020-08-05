@@ -1,16 +1,18 @@
-const { init } = require("browser-sync");
+// const { init } = require("browser-sync");
 
-const SliderModule = (function() {
-  function init() {
+// const SliderModule = (function() {
+//   function init() {
     
-  }
+//   }
 
-  function slideRight() {
+//   function slideRight() {
 
-  }
-  return {
-    init
-  }
-})();
+//   }
+//   return {
+//     init
+//   }
+// })();
 
-SliderModule.init();
+// SliderModule.init();
+
+console.log(1);
