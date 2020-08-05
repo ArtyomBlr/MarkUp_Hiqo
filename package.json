@@ -25,11 +25,14 @@
   },
   "homepage": "https://github.com/ArtyomBlr/MarkUp_Hiqo#readme",
   "devDependencies": {
+    "@babel/core": "^7.11.1",
+    "@babel/preset-env": "^7.11.0",
     "browser-sync": "^2.26.7",
     "csscomb": "^4.3.0",
     "del": "^5.1.0",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^7.0.1",
+    "gulp-babel": "^8.0.0-beta.2",
     "gulp-clean-css": "^4.3.0",
     "gulp-html-bem-validator": "^1.0.5",
     "gulp-htmlhint": "^3.0.1",
@@ -39,6 +42,7 @@
     "gulp-sass": "^4.1.0",
     "gulp-sourcemaps": "^2.6.5",
     "gulp-stylelint": "^13.0.0",
+    "gulp-uglify": "^3.0.2",
     "gulp-w3c-html-validator": "^2.0.1",
     "htmlhint": "^0.14.1",
     "husky": "^4.2.5",
@@ -49,4 +53,3 @@
   "dependencies": {},
   "description": ""
 }
-
