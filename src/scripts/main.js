@@ -1,18 +1,5 @@
-// const { init } = require("browser-sync");
+import { SliderModule } from './slider';
 
-// const SliderModule = (function() {
-//   function init() {
-
-//   }
-
-//   function slideRight() {
-
-//   }
-//   return {
-//     init
-//   }
-// })();
-
-// SliderModule.init();
-
-console.log(1);
+window.onload = function () {
+  SliderModule.initSlider('#slider', 3, 1);
+};

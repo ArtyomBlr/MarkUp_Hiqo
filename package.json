@@ -28,6 +28,7 @@
   "devDependencies": {
     "@babel/core": "^7.11.1",
     "@babel/preset-env": "^7.11.0",
+    "babelify": "^10.0.0",
     "browser-sync": "^2.26.7",
     "csscomb": "^4.3.0",
     "del": "^5.1.0",
@@ -41,7 +42,9 @@
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^7.0.1",
     "gulp-babel": "^8.0.0-beta.2",
+    "gulp-browserify": "^0.5.1",
     "gulp-clean-css": "^4.3.0",
+    "gulp-concat": "^2.6.1",
     "gulp-html-bem-validator": "^1.0.5",
     "gulp-htmlhint": "^3.0.1",
     "gulp-imagemin": "^7.1.0",

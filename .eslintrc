@@ -5,5 +5,13 @@
     "no-console": 0,
     "no-param-reassign": 0,
     "consistent-return": "off",
+    "import/prefer-default-export": "off",
+    "wrap-iife": [1, "any"],
+    "no-use-before-define": "off",
+  },
+  "env": {
+    "browser": true,
+    "node": true,
+    "jasmine": true
   },
 }
