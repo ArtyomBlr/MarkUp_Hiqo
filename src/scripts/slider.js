@@ -27,7 +27,7 @@ export const SliderModule = (function () {
 
     slideElementPrev();
     slideElementNext();
-    creatDots();
+    createDots();
   }
 
   function slideElementPrev() {
@@ -53,13 +53,13 @@ export const SliderModule = (function () {
   }
 
   function disableBtn() {
-    sliderOptions.btnPrev.disabled = position === 0; // why it doesn't work
+    sliderOptions.btnPrev.disabled = position === 0;
     sliderOptions.btnNext.disabled = position
     <= -(sliderOptions.sliderListItemLen - sliderOptions.slideShow)
     * sliderOptions.itemWidth;
   }
 
-  function creatDots() {
+  function createDots() {
     const pager = document.createElement('div');
     pager.addEventListener('click', initDots);
     pager.classList.add('pager');
@@ -73,7 +73,12 @@ export const SliderModule = (function () {
   }
 
   function initDots(elem) {
+    const pagerItem = document.querySelectorAll('.pager-item');
     if (elem.target.className === 'pager-item') {
+      pagerItem.forEach((el) => {
+        el.classList.remove('pager-item-active');
+      });
+      elem.target.classList.add('pager-item-active');
       position = -elem.target.getAttribute('data-position') * sliderOptions.slideStep * sliderOptions.itemWidth;
       setPosition();
     }
