@@ -4,44 +4,66 @@
   }
 
   .carousel-swiper {
+    position: relative;
     overflow: hidden;
 
     &-buttons {
+      position: absolute;
+      top: 25%;
       display: flex;
       justify-content: space-between;
       width: 100%;
 
+      @include content-width-m {
+        top: 20%;
+      }
+
+      @include content-width-s {
+        top: 35%;
+      }
+
+      @include tablet-width-half {
+        top: 30%;
+      }
+
+      @include mobile-small-width {
+        top: 25%;
+      }
+
       &-prev {
-        width: 120px;
-        height: 120px;
-        padding: 20px;
-        margin-top: 10px;
-        text-align: center;
-
-        &:hover {
-          border: 1px solid $color-border;
-          border-radius: 50%;
-        }
-
-        &-button {
-          width: 30px;
-        }
+        background: url("../../images/previous.svg") no-repeat no-repeat;
+        background-size: contain;
+        background-position: center center;
       }
 
       &-next {
-        width: 120px;
-        height: 120px;
-        padding: 20px;
-        margin-top: 10px;
-        text-align: center;
+        background: url("../../images/next.svg") no-repeat no-repeat;
+        background-size: contain;
+        background-position: center center;
+      }
 
-        &:hover {
-          border: 1px solid $color-border;
-          border-radius: 50%;
+      &-prev,
+      &-next {
+        display: flex;
+        align-items: center;
+        width: 40px;
+        height: 100px;
+        z-index: 1;
+
+        @include content-width-m {
+          width: 30px;
         }
 
-        &-button {
-          width: 30px;
+        @include content-width-s {
+          width: 55px;
+        }
+
+        @include tablet-width-half {
+          width: 35px;
+        }
+
+        &:hover {
+          background-color: $color-border-opacity;
         }
       }
     }
@@ -50,13 +72,15 @@
   .carousel {
     display: flex;
     margin-top: 55px;
+    transition: 0.5s;
 
     &-slider {
-      flex: 0 0 32%;
+      flex: 0 0 31.8%;
       margin-right: 20px;
 
       @include content-width-s {
         flex: 0 0 100%;
+        margin-right: 0;
       }
 
       &-image {
@@ -105,7 +129,7 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin-top: -60px;
+    margin-top: 60px;
 
     @include tablet-width {
       margin: 25px 0 20px;
