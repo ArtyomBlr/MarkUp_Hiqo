@@ -75,12 +75,19 @@
     transition: 0.5s;
 
     &-slider {
-      flex: 0 0 31.8%;
-      margin-right: 20px;
+      flex: 0 0 34%;
+
+      &-figure {
+        padding-right: 20px;
+
+        @include content-width-s {
+          padding-right: 0;
+        }
+      }
 
       @include content-width-s {
         flex: 0 0 100%;
-        margin-right: 0;
+        margin-right: 20px;
       }
 
       &-image {

@@ -7,43 +7,48 @@ export const SliderModule = (function () {
     const sliderList = sliderContainer.firstElementChild;
     const sliderListItem = sliderList.children;
     const sliderListItemLen = sliderListItem.length;
-    const btnPrev = document.getElementsByClassName('carousel-swiper-buttons-prev')[0];
-    const btnNext = document.getElementsByClassName('carousel-swiper-buttons-next')[0];
-    const itemWidth = sliderContainer.offsetWidth / slideShow;
+    const sliderBtn = document.getElementsByClassName('carousel-swiper-buttons')[0];
+    const sliderBtnPrev = document.getElementsByClassName('carousel-swiper-buttons-prev')[0];
+    const sliderBtnNext = document.getElementsByClassName('carousel-swiper-buttons-next')[0];
+    const itemWidth = (sliderContainer.offsetWidth + 20) / slideShow;
     const movePosition = slideStep * itemWidth;
 
+    //  How to realize this? I dont see the solution
+    // const initOptions = {
+    //   ...options,
+    // };
+
     sliderOptions = {
-      slideStep,
+      // ...initOptions,
       slideShow,
+      slideStep,
       sliderContainer,
       sliderList,
       sliderListItem,
       sliderListItemLen,
-      btnPrev,
-      btnNext,
+      sliderBtn,
+      sliderBtnPrev,
+      sliderBtnNext,
       itemWidth,
       movePosition,
     };
 
-    slideElementPrev();
-    slideElementNext();
+    moveSlider();
     createDots();
   }
 
-  function slideElementPrev() {
-    sliderOptions.btnPrev.addEventListener('click', () => {
-      position += sliderOptions.movePosition;
+  function moveSlider() {
+    sliderOptions.sliderBtn.addEventListener('click', (elem) => {
+      if (elem.target.className === 'carousel-swiper-buttons-prev') {
+        position += sliderOptions.movePosition;
 
-      setPosition();
-      disableBtn();
-    });
-  }
+        setPosition();
+      }
+      if (elem.target.className === 'carousel-swiper-buttons-next') {
+        position -= sliderOptions.movePosition;
 
-  function slideElementNext() {
-    sliderOptions.btnNext.addEventListener('click', () => {
-      position -= sliderOptions.movePosition;
-
-      setPosition();
+        setPosition();
+      }
       disableBtn();
     });
   }
@@ -53,8 +58,8 @@ export const SliderModule = (function () {
   }
 
   function disableBtn() {
-    sliderOptions.btnPrev.disabled = position === 0;
-    sliderOptions.btnNext.disabled = position
+    sliderOptions.sliderBtnPrev.disabled = position === 0;
+    sliderOptions.sliderBtnNext.disabled = position
     <= -(sliderOptions.sliderListItemLen - sliderOptions.slideShow)
     * sliderOptions.itemWidth;
   }
