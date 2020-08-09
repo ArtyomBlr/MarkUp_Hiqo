@@ -55,6 +55,8 @@ export const SliderModule = (function () {
 
   function setPosition() {
     sliderOptions.sliderList.style.transform = `translateX(${position}px)`;
+
+    activateDots();
   }
 
   function disableBtn() {
@@ -86,6 +88,16 @@ export const SliderModule = (function () {
       elem.target.classList.add('pager-item-active');
       position = -elem.target.getAttribute('data-position') * sliderOptions.slideStep * sliderOptions.itemWidth;
       setPosition();
+    }
+  }
+
+  function activateDots() {
+    const pagerItem = document.getElementsByClassName('pager-item');
+    for (let q = 0; q < pagerItem.length; q++) {
+      pagerItem[q].classList.remove('pager-item-active');
+      if (+pagerItem[q].getAttribute('data-position') === -(position / sliderOptions.itemWidth / sliderOptions.slideShow)) {
+        pagerItem[q].classList.add('pager-item-active');
+      }
     }
   }
 
