@@ -82,12 +82,12 @@
 .navigation-list-item {
   @include animation (scale(1, 1), ease 0.3s);
 
-  &:hover {
+  &:active {
     @include animation (scale(0.99, 0.95), ease 0.3s);
   }
 
   &-link {
-    &:hover {
+    &:active {
       color: $color-links;
     }
   }

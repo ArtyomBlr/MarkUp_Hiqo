@@ -32,7 +32,7 @@
       order: 3;
     }
 
-    .h5 {
+    .content-title-middle {
       margin-bottom: 37px;
 
       @include content-width-m {
@@ -45,7 +45,7 @@
     max-width: 326px;
     order: 2;
 
-    .h5 {
+    .content-title-middle {
       @include content-width-s {
         display: none;
       }
@@ -66,6 +66,22 @@
 
       @include content-width-s {
         padding: 5px 12px;
+      }
+    }
+
+    .button-ghost {
+      display: none;
+
+      @include content-width-s {
+        display: block;
+      }
+    }
+
+    .button-filled {
+      display: block;
+
+      @include content-width-s {
+        display: none;
       }
     }
   }

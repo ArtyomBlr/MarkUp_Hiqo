@@ -1,0 +1,173 @@
+.section-carousel {
+  .section-title-small {
+    margin-bottom: 11px;
+  }
+
+  .carousel-swiper {
+    position: relative;
+    overflow: hidden;
+
+    &-buttons {
+      position: absolute;
+      top: 25%;
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+
+      @include content-width-m {
+        top: 20%;
+      }
+
+      @include content-width-s {
+        top: 35%;
+      }
+
+      @include tablet-width-half {
+        top: 30%;
+      }
+
+      @include mobile-small-width {
+        top: 25%;
+      }
+
+      &-prev {
+        background: url("../../images/previous.svg") no-repeat no-repeat;
+        background-size: contain;
+        background-position: center center;
+      }
+
+      &-next {
+        background: url("../../images/next.svg") no-repeat no-repeat;
+        background-size: contain;
+        background-position: center center;
+      }
+
+      &-prev,
+      &-next {
+        display: flex;
+        align-items: center;
+        width: 40px;
+        height: 100px;
+        z-index: 1;
+
+        @include content-width-m {
+          width: 30px;
+        }
+
+        @include content-width-s {
+          width: 55px;
+        }
+
+        @include tablet-width-half {
+          width: 35px;
+        }
+
+        &:hover {
+          background-color: $color-border-opacity;
+        }
+      }
+    }
+  }
+
+  .carousel {
+    display: flex;
+    margin-top: 55px;
+    transition: 0.5s;
+
+    &-slider {
+      flex: 0 0 34%;
+
+      &-figure {
+        padding-right: 20px;
+
+        @include content-width-s {
+          padding-right: 0;
+        }
+      }
+
+      @include content-width-s {
+        flex: 0 0 100%;
+        margin-right: 20px;
+      }
+
+      &-image {
+        width: 100%;
+      }
+
+      &-figcaption {
+        @include font (16px, normal, normal, 28px);
+        margin: 20px 0 11px;
+
+        @include content-width-m {
+          @include font (14px, normal, normal, 25px);
+        }
+
+        @include mobile-width {
+          margin: 11px 0;
+        }
+      }
+
+      &-link {
+        @include animation (none, ease 0.2s);
+        @include font (24px, bold, normal, 34px);
+        letter-spacing: 2px;
+
+        @include content-width-l {
+          @include font (20px, bold, normal, 34px);
+        }
+
+        @include content-width-m {
+          @include font (18px, bold, normal, 25px);
+        }
+
+        @include mobile-width {
+          @include font (16px, bold, normal, 20px);
+        }
+
+        &:hover {
+          @include animation (none, ease 0.2s);
+          color: $color-brand;
+        }
+      }
+    }
+  }
+
+  .pager {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 60px;
+
+    @include tablet-width {
+      margin: 25px 0 20px;
+    }
+
+    @include mobile-width {
+      margin: 25px 0 0;
+    }
+
+    &-item {
+      margin: 0 5px;
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      background: $color-pager;
+      cursor: pointer;
+
+      @include tablet-width {
+        margin: 0 8px;
+        width: 12px;
+        height: 12px;
+      }
+
+      &:hover {
+        border: 1px solid $color-text;
+      }
+
+      &-active {
+        background: $color-brand;
+      }
+    }
+  }
+}
+

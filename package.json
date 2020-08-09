@@ -7,7 +7,8 @@
     "start": "gulp start",
     "htmlhint": "htmlhint src/**/*.html",
     "stylelint": "stylelint src/**/*.scss",
-    "lint": "npm run stylelint & npm run htmlhint"
+    "eslint": "eslint ./src/scripts/*.js",
+    "lint": "npm run stylelint && npm run htmlhint && npm run eslint"
   },
   "husky": {
     "hooks": {
@@ -25,12 +26,25 @@
   },
   "homepage": "https://github.com/ArtyomBlr/MarkUp_Hiqo#readme",
   "devDependencies": {
+    "@babel/core": "^7.11.1",
+    "@babel/preset-env": "^7.11.0",
+    "babelify": "^10.0.0",
     "browser-sync": "^2.26.7",
     "csscomb": "^4.3.0",
     "del": "^5.1.0",
+    "eslint": "^7.2.0",
+    "eslint-config-airbnb": "^18.2.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-plugin-import": "^2.21.2",
+    "eslint-plugin-jsx-a11y": "^6.3.0",
+    "eslint-plugin-react": "^7.20.0",
+    "eslint-plugin-react-hooks": "^4.0.0",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^7.0.1",
+    "gulp-babel": "^8.0.0-beta.2",
+    "gulp-browserify": "^0.5.1",
     "gulp-clean-css": "^4.3.0",
+    "gulp-concat": "^2.6.1",
     "gulp-html-bem-validator": "^1.0.5",
     "gulp-htmlhint": "^3.0.1",
     "gulp-imagemin": "^7.1.0",
@@ -39,6 +53,7 @@
     "gulp-sass": "^4.1.0",
     "gulp-sourcemaps": "^2.6.5",
     "gulp-stylelint": "^13.0.0",
+    "gulp-uglify": "^3.0.2",
     "gulp-w3c-html-validator": "^2.0.1",
     "htmlhint": "^0.14.1",
     "husky": "^4.2.5",
@@ -49,4 +64,3 @@
   "dependencies": {},
   "description": ""
 }
-
