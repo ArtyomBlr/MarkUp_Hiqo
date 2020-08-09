@@ -56,7 +56,7 @@ export const SliderModule = (function () {
   function setPosition() {
     sliderOptions.sliderList.style.transform = `translateX(${position}px)`;
 
-    activateDots();
+    makeDotsActive();
   }
 
   function disableBtn() {
@@ -91,7 +91,7 @@ export const SliderModule = (function () {
     }
   }
 
-  function activateDots() {
+  function makeDotsActive() {
     const pagerItem = document.getElementsByClassName('pager-item');
     for (let q = 0; q < pagerItem.length; q++) {
       pagerItem[q].classList.remove('pager-item-active');
